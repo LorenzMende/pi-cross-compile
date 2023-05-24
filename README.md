@@ -1,4 +1,5 @@
-# mitchallen/pi-cross-compile (Dockerfile)
+# LorenzMende/pi-cross-compile (Dockerfile)
+# update of mitchallens package (mitchallen/pi-cross-compile)
 
 A Dockerfile to allow cross-compiling C/C++ projects in Ubuntu that will run on a Raspberry Pi.
 
@@ -35,7 +36,7 @@ To use the example project do the following:
 
     git clone https://github.com/mitchallen/pi-hello-cross-compile.git --depth=1 hello
 
-    docker run -it -v ~/raspberry/hello:/build mitchallen/pi-cross-compile
+    docker run -it -v ~/raspberry/hello:/build lorenzmende/pi-cross-compile
   
 On success an executable that only runs on the Raspberry Pi should be found here: __~/raspberry/hello/bin/hello__. It's up to you to figure out how to get it on your Pi to run it.
  
@@ -65,8 +66,7 @@ Once your build is complete, the executable will not work on Ubuntu or a Mac. It
  
 ## Repo(s)
 
-* [bitbucket.org/mitchallen/pi-cross-compile.git](https://bitbucket.org/mitchallen/pi-cross-compile.git)
-* [github.com/mitchallen/pi-cross-compile.git](https://github.com/mitchallen/pi-cross-compile.git)
+* [github.com/LorenzMende/pi-cross-compile](https://github.com/LorenzMende/pi-cross-compile)
 
 * * *
 
